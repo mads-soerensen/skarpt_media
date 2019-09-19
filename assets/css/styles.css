@@ -1,0 +1,3367 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 4vw;
+  max-width: 100vw;
+}
+
+#navbarskarptto {
+  display: none;
+}
+
+.frontpagetext p {
+  color: #3e4f59;
+  line-height: 20px;
+}
+
+.nav-bar {
+  height: 70px;
+  background-color: #294973;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.nav-bar-desk {
+  display: none;
+}
+
+.maincontentfp {
+  padding-top: 70px;
+}
+
+.maincontentex {
+  padding-top: 100px;
+}
+
+.open {
+  color: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.nav-bar .logo {
+  max-width: 200px;
+  padding: 0 10px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.nav-bar .logo a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-bar .logo a img {
+  max-width: 100%;
+  max-height: 60px;
+}
+
+.distopnav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-image: url("../images/menubg.jpg");
+  transition: 0.5s;
+  padding-top: 50px;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.distopnav img {
+  width: 90vw;
+  display: block;
+  transition: 0.5s;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.menuitems a {
+  text-decoration: none;
+  font-size: 7vw;
+  color: #ffffff;
+  display: block;
+  transition: 0.5s;
+  margin-left: 3vw;
+  padding: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.closebtn {
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  left: 45vw;
+  padding-bottom: 15vh;
+}
+
+.closebtn-phone {
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  left: 45vw;
+  padding-bottom: 15vh;
+}
+
+.vimeoplayer {
+  padding: 42.5% 0 0;
+  position: relative;
+}
+
+.vimeovideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vimeovideomargin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dot-size {
+  font-size: 40px;
+  line-height: 0;
+}
+
+.flereprod-btn {
+  background-color: #294973;
+  border: 1px solid #3e4f59;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px;
+  text-decoration: none;
+  width: 50%;
+  grid-area: flereprod-btn;
+  margin-left: auto;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.kontakt-btn {
+  background-color: #294973;
+  border: 1px solid #3e4f59;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px;
+  text-decoration: none;
+  width: 50%;
+  grid-area: kontaktbtn;
+  margin-left: auto;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.hr-splitter {
+  border: 2px solid #f08600;
+  margin: 25px 20px;
+  background: #f08600;
+}
+
+.hr-split {
+  border: 2px solid #f08600;
+  margin: 25px 20px;
+  grid-area: hr-split;
+  background: #f08600;
+}
+
+.hr-split-desk {
+  border: 2px solid #f08600;
+  margin: 25px 20px;
+  grid-area: hr-split-desk;
+  background: #f08600;
+  display: none;
+}
+
+.hr-split2-omperskontakt {
+  display: none;
+}
+
+.hr-split2 {
+  border: 2px solid #f08600;
+  margin: 25px 20px;
+  grid-area: hr-split2;
+  background: #f08600;
+}
+
+.hr-split3 {
+  border: 2px solid #f08600;
+  margin: 25px 20px;
+  grid-area: hr-split3;
+  background: #f08600;
+}
+
+.hr-split-small {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small;
+  background: #f08600;
+}
+
+.hr-split-small-fp {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-fp;
+  background: #f08600;
+}
+
+.hr-split-small-fp1 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-fp1;
+  background: #f08600;
+}
+
+.hr-split-small1 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small1;
+  background: #f08600;
+}
+
+.hr-split-small2 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small2;
+  background: #f08600;
+}
+
+.hr-split-small-con {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-con;
+  background: #f08600;
+}
+
+.blue {
+  color: #294973;
+}
+
+.orange {
+  color: #f08600;
+}
+
+.grey {
+  color: #3e4f59;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.whitemiddle {
+  color: #ffffff;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.whiteleft {
+  color: #ffffff;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+  float: left;
+  position: absolute;
+  bottom: 0;
+}
+.kontaktos-text {
+  display: none;
+}
+
+.slides {
+  display: none;
+}
+
+.dot-container {
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+.plus {
+  cursor: pointer;
+  width: auto;
+  color: #f08600;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.minus {
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  width: auto;
+  color: #f08600;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float: left;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  opacity: 0.4;
+}
+
+.active,
+.dot:hover {
+  background-color: #f08600;
+  opacity: 1;
+}
+
+/* Grid content og container - Forside */
+
+.showreel {
+  grid-area: showreel;
+}
+
+.showreel-desktop {
+  display: none;
+  grid-area: showreel-desktop;
+}
+
+.frontpagetext {
+  grid-area: frontpagetext;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow-wrap: break-word;
+  font-size: 0.9em;
+}
+
+.frontpagetext-desk {
+  display: none;
+}
+
+.sevideoprodh1 {
+  grid-area: sevideoprodh1;
+  margin-left: 20px;
+}
+
+.fairwind-video {
+  grid-area: fairwind-video;
+}
+
+.fpimg {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-size: cover;
+  text-align: center;
+}
+
+.playbtn-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f08600;
+  font-size: 20vw;
+}
+
+.fpimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.fairwind-text {
+  grid-area: fairwind-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.boeje-video {
+  grid-area: boeje-video;
+}
+
+.boeje-text {
+  grid-area: boeje-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Kontakt knapper på modals */
+.modal-kontakt {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  position: relative;
+  padding-bottom: 4vh;
+}
+
+/* Close boje modal */
+.ydelsecloseboje {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelsecloseboje:hover,
+.ydelsecloseboje:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.referencer-tablet-joblinsen {
+  display: none;
+}
+
+.referencer-tablet-vejle {
+  display: none;
+}
+
+.referencertext {
+  grid-area: referencertext;
+  margin-left: 20px;
+}
+
+.textbox {
+  height: 480px;
+  background-color: #3e4f59;
+  margin-left: 20px;
+  margin-right: 20px;
+  grid-area: textbox;
+  border-radius: 5px;
+  position: relative;
+}
+
+.textbox img {
+  display: block;
+  width: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.jacobforsideimg {
+  grid-area: jacobforsideimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+#logoflex {
+  display: none;
+}
+
+.jacobforsideimg img {
+  height: auto;
+  width: 100%;
+}
+
+.jacobforside {
+  font-style: normal;
+  line-height: 12px;
+}
+
+.jacobforside a,
+.simonforside a {
+  text-decoration: none;
+}
+
+.simonforsideimg {
+  grid-area: simonforsideimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.simonforsideimg img {
+  height: auto;
+  width: 100%;
+}
+
+.simonforside {
+  font-style: normal;
+  line-height: 12px;
+}
+
+.inlineaddress {
+  font-style: normal;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.inlineaddress p {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.inlineaddress a {
+  text-decoration: none;
+}
+
+.footer {
+  height: 35vh;
+  background-color: #3e4f59;
+  margin-top: 50px;
+  grid-area: footer;
+  position: relative;
+  z-index: 50;
+}
+
+.socialmedia {
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12vw;
+  padding-top: 30px;
+  flex: 1 1 auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  color: #f08600;
+}
+
+.menuitems a.nav-active {
+  color: #f08600;
+}
+
+.footeraddress {
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+.footeraddress p {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ffffff;
+}
+
+.footeraddress a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.active-footer-address-ipad {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "showreel"
+    "frontpagetext"
+    "hr-split"
+    "sevideoprodh1"
+    "fairwind-video"
+    "fairwind-text"
+    "hr-split-small-fp"
+    "boeje-video"
+    "boeje-text"
+    "flereprod-btn"
+    "hr-split2"
+    "referencertext"
+    "textbox"
+    "hr-split3"
+    "jacobforsideimg"
+    "jacobforside"
+    "hr-split-small-fp1"
+    "simonforsideimg"
+    "simonforside"
+    "kontaktbtn"
+    "footer";
+}
+
+/* Ydelser container og content */
+
+/* Event video */
+.eventvideoimg {
+  grid-area: eventvideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.eventvideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.eventvideo-text {
+  grid-area: eventvideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* DRONEVIDEO CLOSE MODAL */
+.ydelsecloseevent {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  left: 38vw;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelsecloseevent:hover,
+.ydelsecloseevent:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Produkt video */
+
+.produktvideoimg {
+  grid-area: produktvideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.produktvideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.produktvideo-text {
+  grid-area: produktvideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* REKRUTTERINGSVIDEO */
+.rekvideoimg {
+  grid-area: rekvideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.rekvideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.rekvideo-text {
+  grid-area: rekvideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* DRONEVIDEO */
+.dronevideoimg {
+  grid-area: dronevideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.dronevideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.dronevideo-text {
+  grid-area: dronevideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* DRONEVIDEO CLOSE MODAL */
+.ydelseclosedrn {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelseclosedrn:hover,
+.ydelseclosedrn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* PROFILVIDEO */
+.profilvideoimg {
+  grid-area: profilvideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.profilvideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.profilvideo-text {
+  grid-area: profilvideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* PROFILVIDEO CLOSE MODAL */
+.ydelsecloseprofil {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelsecloseprofil:hover,
+.ydelsecloseprofil:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* REKLAMEVIDEO */
+.reklamevideoimg {
+  grid-area: reklamevideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.reklamevideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.reklamevideo-text {
+  grid-area: reklamevideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* REKLAMEVIDEO CLOSE MODAL */
+.ydelseclosereklam {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelseclosereklam:hover,
+.ydelseclosereklam:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Ydelse splitters */
+.hr-splitter-y-1 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-y-1;
+  background: #f08600;
+}
+.hr-splitter-y-2 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-y-2;
+  background: #f08600;
+}
+.hr-splitter-y-3 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-y-3;
+  background: #f08600;
+}
+.hr-splitter-y-4 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-y-4;
+  background: #f08600;
+}
+.hr-splitter-y-5 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-y-5;
+  background: #f08600;
+}
+
+.forloeb-text {
+  grid-area: forloebtext;
+  margin-left: 20px;
+  font-size: 3.5vw;
+}
+
+.forloeb-btn {
+  grid-area: forloebbtn;
+  background-color: #294973;
+  border: 1px solid #3e4f59;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px;
+  text-decoration: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.kontaktos-btn {
+  display: none;
+}
+
+.grid-container-ydelser {
+  display: grid;
+  grid-template-areas:
+    "frontpagetext"
+    "hr-split"
+    "produktvideoimg"
+    "produktvideotext"
+    "hr-splitter-y-1"
+    "rekvideoimg"
+    "rekvideotext"
+    "hr-splitter-y-2"
+    "eventvideoimg"
+    "eventvideotext"
+    "hr-splitter-y-3"
+    "dronevideoimg"
+    "dronevideotext"
+    "hr-splitter-y-4"
+    "profilvideoimg"
+    "profilvideotext"
+    "hr-splitter-y-5"
+    "reklamevideoimg"
+    "reklamevideotext"
+    "hr-split2"
+    "forloebtext"
+    "forloebbtn"
+    "footer";
+}
+
+/* Modal til ydelser */
+.ydelsemodal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 300; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding-top: 5vh;
+  overflow: auto;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-bottom: 5vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.ydelse-modal-content {
+  background-color: #3e4f59;
+  margin: auto;
+  width: 90%;
+  z-index: 400;
+  height: auto;
+}
+
+.ydelse-modal-content img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Close rek */
+.ydelseclose {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelseclose:hover,
+.ydelseclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hr-split-small-ydelse {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  background: #f08600;
+}
+
+/* Close prodvideo */
+.ydelsecloseprod {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelsecloseprod:hover,
+.ydelsecloseprod:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ydelsemodalheader {
+  margin-left: 20px;
+}
+
+.ydelsemodaltext {
+  font-style: normal;
+  line-height: 25px;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Grid container til om personer */
+
+.omos-h1 {
+  grid-area: omos-h1;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.navn-text {
+  grid-area: navn-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.hr-split-small-ompers {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-ompers;
+  background: #f08600;
+}
+
+.alder-text {
+  grid-area: alder-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.passion-text {
+  grid-area: passion-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.hvordan-text {
+  grid-area: hvordan-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.erfaring-text {
+  grid-area: erfaring-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.jacobsimonimg {
+  grid-area: jacobsimonimg;
+  padding-top: 70px;
+  max-width: 100%;
+  height: auto;
+}
+
+.jacobsimonimg-m-fp {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-container-ompers {
+  display: grid;
+  grid-template-areas:
+    "jacobsimonimg"
+    "frontpagetext"
+    "hr-split"
+    "navn-text"
+    "alder-text"
+    "passion-text"
+    "hvordan-text"
+    "erfaring-text"
+    "containertimeline"
+    "footer";
+}
+
+/* Timeline til omos */
+
+.containertimeline {
+  grid-area: containertimeline;
+}
+
+.containertimeline ul {
+  list-style: none;
+  padding: 10px 60px;
+  color: #ffffff;
+  font-size: 13px;
+}
+.containertimeline ul:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed #294973;
+}
+.containertimeline ul li {
+  position: relative;
+  margin-left: 30px;
+  background-color: #3e4f59;
+  padding: 14px;
+  line-height: 25px;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+.containertimeline ul li:not(:first-child) {
+  margin-top: 60px;
+}
+.containertimeline ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #294973;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.containertimeline ul li > span:before,
+.container ul li > span:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #f08600;
+  position: absolute;
+  background: #f08600;
+  left: -5px;
+  top: 0;
+}
+.containertimeline ul li span:after {
+  top: 100%;
+}
+.containertimeline ul li > div {
+  margin-left: 10px;
+}
+.containertimeline div .title,
+.container div .type {
+  font-weight: 600;
+  font-size: 12px;
+}
+.containertimeline div .info {
+  font-weight: 300;
+}
+.containertimeline div > div {
+  margin-top: 5px;
+}
+.containertimeline span.number {
+  height: 100%;
+  color: #294973;
+}
+.containertimeline span.number span {
+  position: absolute;
+  font-size: 10px;
+  left: -35px;
+  font-weight: bold;
+}
+.containertimeline span.number span:first-child {
+  top: 0;
+}
+
+/* Forløb grid container */
+
+.hr-split-small-forloeb {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb;
+  background: #f08600;
+}
+
+.hr-split-small-forloeb1 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb1;
+  background: #f08600;
+}
+
+.hr-split-small-forloeb2 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb2;
+  background: #f08600;
+}
+
+.hr-split-small-forloeb3 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb3;
+  background: #f08600;
+}
+
+.hr-split-small-forloeb4 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb4;
+  background: #f08600;
+}
+
+.hr-split-small-forloeb1-desk {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb1-d;
+  background: #f08600;
+  display: none;
+}
+
+.hr-split-small-forloeb2-desk {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb2-d;
+  background: #f08600;
+  display: none;
+}
+
+.hr-split-small-forloeb3-desk {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb3-d;
+  background: #f08600;
+  display: none;
+}
+
+.hr-split-small-forloeb4-desk {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-split-small-forloeb4-d;
+  background: #f08600;
+  display: none;
+}
+
+.generel-h1 {
+  grid-area: generel-h1;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.opstart-h1 {
+  grid-area: opstart-h1;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.opstart-text {
+  grid-area: opstart-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.pre-h1 {
+  grid-area: pre-h1;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.pre-text {
+  grid-area: pre-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.opstartimg {
+  grid-area: opstartimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.opstartimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.preproductionimg {
+  grid-area: preproductionimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.preproductionimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.prodimg {
+  grid-area: prodimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.prodimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.prod-h1 {
+  grid-area: prod-h1;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.prod-text {
+  grid-area: prod-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.postimg {
+  grid-area: postimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.postimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.post-h1 {
+  grid-area: post-h1;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.post-text {
+  grid-area: post-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.opflimg {
+  grid-area: opflimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.opflimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.opfl-h1 {
+  grid-area: opfl-h1;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.opfl-text {
+  grid-area: opfl-text;
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.grid-container-forloeb {
+  display: grid;
+  grid-template-areas:
+    "frontpagetext"
+    "hr-split"
+    "opstartimg"
+    "opstart-h1"
+    "opstart-text"
+    "hr-split-small-forloeb1"
+    "preproductionimg"
+    "pre-h1"
+    "pre-text"
+    "hr-split-small-forloeb2"
+    "prodimg"
+    "prod-h1"
+    "prod-text"
+    "hr-split-small-forloeb3"
+    "postimg"
+    "post-h1"
+    "post-text"
+    "hr-split-small-forloeb4"
+    "opflimg"
+    "opfl-h1"
+    "opfl-text"
+    "footer";
+}
+
+/* Modal til telefonen*/
+
+.phone-btn {
+  background-color: #3e4f59;
+  font-weight: bold;
+  text-decoration: none;
+  width: 15%;
+  height: 10vw;
+  float: right;
+  margin-top: 10px;
+  position: fixed;
+  z-index: 1;
+  bottom: 5vh;
+  right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.75);
+}
+
+.phone-btn i {
+  color: #f08600;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  line-height: 10vw;
+  vertical-align: middle;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  padding-top: 30vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.modal-content {
+  background-color: #3e4f59;
+  margin: auto;
+  height: 25vh;
+  width: 80%;
+  z-index: 12;
+  text-align: center;
+  padding-top: 1vh;
+}
+
+.phone,
+.mail {
+  color: #ffffff;
+  font-size: 50px;
+  display: inline-block;
+  margin: 0 4vw;
+}
+
+.phonew,
+.mailw {
+  color: #ffffff;
+  font-size: 50px;
+  display: inline-block;
+  margin: 0 4vw;
+}
+
+/* The Close Button */
+.close {
+  z-index: 2;
+  position: absolute;
+  margin: auto;
+  color: #ffffff;
+}
+
+/*----------KONTAKTSIDE----------*/
+.contact-header {
+  grid-area: formheader;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #294973;
+}
+
+.form-input {
+  grid-area: forms;
+  margin-left: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: calc(100% - 20px);
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: 1px solid #f08600;
+}
+
+.message {
+  height: 15vh;
+}
+
+input[type="submit"] {
+  background-color: #294973;
+  border: 1px solid #3e4f59;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px;
+  text-decoration: none;
+  width: 32%;
+  text-align: center;
+  margin: 20px 20px 0 0;
+  float: right;
+}
+
+.grid-container-kontakt {
+  display: grid;
+  grid-template-areas:
+    "frontpagetext"
+    "hr-split"
+    "jacobforsideimg"
+    "hr-split-small-con"
+    "simonforsideimg"
+    "hr-split2"
+    "formheader"
+    "forms"
+    "footer";
+}
+
+form p {
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+
+.checkbox {
+  position: absolute;
+  font-size: 22px;
+  margin-top: 29px;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #f08600;
+  background-color: #fff;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #294973;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Grid container til tidligere produkter */
+
+.grid-container-produkt {
+  display: grid;
+  grid-template-areas:
+    "frontpagetext"
+    "hr-split-t"
+    "horsvideoimg"
+    "horsvideotext"
+    "hr-splitter-t-1"
+    "fairvideoimg"
+    "fairvideotext"
+    "hr-splitter-t-2"
+    "paravideoimg"
+    "paravideotext"
+    "hr-splitter-t-3"
+    "kenvideoimg"
+    "kenvideotext"
+    "hr-splitter-t-4"
+    "jeepvideoimg"
+    "jeepvideotext"
+    "hr-splitter-t-5"
+    "bojevideoimg"
+    "bojevideotext"
+    "showmore"
+    "show-btn"
+    "footer";
+}
+
+/* Event video */
+.paravideoimg {
+  grid-area: paravideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.paravideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.paravideo-text {
+  grid-area: paravideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* DRONEVIDEO CLOSE MODAL */
+.ydelsecloseevent {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  left: 38vw;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelsecloseevent:hover,
+.ydelsecloseevent:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Produkt video */
+
+.jeepvideoimg {
+  grid-area: jeepvideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.jeepvideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.jeepvideo-text {
+  grid-area: jeepvideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* REKRUTTERINGSVIDEO */
+.fairvideoimg {
+  grid-area: fairvideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.fairvideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.fairvideo-text {
+  grid-area: fairvideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* DRONEVIDEO */
+.horsvideoimg {
+  grid-area: horsvideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.horsvideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.horsvideo-text {
+  grid-area: horsvideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* DRONEVIDEO CLOSE MODAL */
+.ydelseclosedrn {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelseclosedrn:hover,
+.ydelseclosedrn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* PROFILVIDEO */
+.kenvideoimg {
+  grid-area: kenvideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.kenvideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.kenvideo-text {
+  grid-area: kenvideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* PROFILVIDEO CLOSE MODAL */
+.ydelsecloseprofil {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelsecloseprofil:hover,
+.ydelsecloseprofil:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* REKLAMEVIDEO */
+.bojevideoimg {
+  grid-area: bojevideoimg;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.bojevideoimg img {
+  height: auto;
+  max-width: 100%;
+}
+
+.bojevideo-text {
+  grid-area: bojevideotext;
+  margin-left: 20px;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+/* REKLAMEVIDEO CLOSE MODAL */
+.ydelseclosereklam {
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
+
+.ydelseclosereklam:hover,
+.ydelseclosereklam:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Ydelse splitters */
+.hr-splitter-t-1 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-t-1;
+  background: #f08600;
+}
+.hr-splitter-t-2 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-t-2;
+  background: #f08600;
+}
+.hr-splitter-t-3 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-t-3;
+  background: #f08600;
+}
+.hr-splitter-t-4 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-t-4;
+  background: #f08600;
+}
+.hr-splitter-t-5 {
+  border: 1px solid #f08600;
+  margin: 15px 60% 25px 20px;
+  grid-area: hr-splitter-t-5;
+  background: #f08600;
+}
+
+.hr-split-t {
+  border: 2px solid #f08600;
+  margin: 25px 20px;
+  grid-area: hr-split-t;
+  background: #f08600;
+}
+
+/* Show more til tidligere produkter */
+
+.showmore {
+  grid-area: showmore;
+  line-height: 25px;
+}
+
+.showmore button {
+  border: none;
+  background-color: #294973;
+}
+
+/* skal animeres gerne, dog virker den med display:none til block */
+#more {
+  display: none;
+  max-width: 100vw;
+}
+
+#moreVideos {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#moreVideos i {
+  font-size: 30px;
+  margin-top: 5px;
+  display: block;
+  padding: 0;
+}
+#moreVideos p {
+  margin: 5px auto;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 10px 2px 10px;
+}
+
+.showmore-btn {
+  grid-area: show-btn;
+  font-size: 13px;
+}
+.produkt-tablet {
+  display: none;
+}
+
+.clear-space,
+.clear-space1,
+.clear-space2,
+.clear-space3,
+.clear-space4,
+.clear-space5 {
+  display: none;
+}
+
+.jacobsimonimgipad {
+  display: none;
+}
+
+.jacobsimonimgipad-fp {
+  display: none;
+}
+
+.flereprod-desk-btn {
+  display: none;
+}
+
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .ydelsecloseevent {
+    left: 42.6vw;
+  }
+
+  .showreel-desktop {
+    display: none;
+  }
+
+  .flereprod-desk-btn {
+    display: none;
+  }
+
+  #pro-page {
+    width: 80%;
+  }
+
+  #fp-text {
+    display: none;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "showreel showreel"
+      "frontpagetext-desk jacobsimonimgipad-fp"
+      "hr-split hr-split"
+      "sevideoprodh1 sevideoprodh1"
+      "fairwind-video boeje-video"
+      "fairwind-text boeje-text"
+      "flereprod-btn flereprod-btn"
+      "hr-split2 hr-split2"
+      "referencertext referencertext"
+      "referencer-tablet-joblinsen referencer-tablet-vejle"
+      "hr-split3 hr-split3"
+      "jacobforsideimg simonforsideimg"
+      "jacobforside simonforside"
+      "kontaktbtn kontaktbtn"
+      "footer footer";
+  }
+
+  .grid-container-produkt {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "frontpagetext frontpagetext"
+      "hr-split-t hr-split-t"
+      "horsvideoimg fairvideoimg"
+      "horsvideotext fairvideotext"
+      "hr-splitter-t-1 hr-splitter-t-2"
+      "paravideoimg kenvideoimg"
+      "paravideotext kenvideotext"
+      "hr-splitter-t-3 hr-splitter-t-4"
+      "jeepvideoimg bojevideoimg"
+      "jeepvideotext bojevideotext"
+      "footer footer";
+  }
+
+  .grid-container-ydelser {
+    display: grid;
+    grid-template-areas:
+      "frontpagetext frontpagetext"
+      "hr-split hr-split"
+      "produktvideoimg rekvideoimg"
+      "produktvideotext rekvideotext"
+      "hr-splitter-y-1 hr-splitter-y-2"
+      "eventvideoimg dronevideoimg"
+      "eventvideotext dronevideotext"
+      "hr-splitter-y-3 hr-splitter-y-4"
+      "reklamevideoimg profilvideoimg"
+      "reklamevideotext profilvideotext"
+      "hr-split2 hr-split2"
+      "forloebtext forloebtext"
+      "forloebbtn forloebbtn"
+      "footer footer";
+  }
+
+  .grid-container-forloeb {
+    display: grid;
+    grid-template-areas:
+      "frontpagetext frontpagetext"
+      "hr-split hr-split"
+      "clear-space opstart-h1"
+      "opstartimg opstart-text"
+      "hr-split-small-forloeb1 hr-split-small-forloeb1"
+      "pre-h1 clear-space1"
+      "pre-text preproductionimg"
+      "hr-split-small-forloeb2 hr-split-small-forloeb2"
+      "clear-space2 prod-h1"
+      "prodimg prod-text"
+      "hr-split-small-forloeb3 hr-split-small-forloeb3"
+      "post-h1 clear-space3"
+      "post-text postimg"
+      "hr-split-small-forloeb4 hr-split-small-forloeb4"
+      "clear-space4 opfl-h1"
+      "opflimg opfl-text"
+      "footer footer";
+  }
+  .grid-container-ompers {
+    display: grid;
+    grid-template-areas:
+      "jacobsimonimgipad jacobsimonimgipad"
+      "frontpagetext frontpagetext"
+      "hr-split hr-split"
+      "navn-text containertimeline"
+      "alder-text containertimeline"
+      "passion-text containertimeline"
+      "hvordan-text containertimeline"
+      "erfaring-text containertimeline"
+      "footer footer";
+  }
+  .jacobsimonimgipad {
+    grid-area: jacobsimonimgipad;
+    padding-top: 70px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .jacobsimonimg {
+    display: none;
+  }
+
+  .clear-space {
+    grid-area: clear-space;
+    opacity: 0;
+  }
+  .clear-space1 {
+    grid-area: clear-space1;
+    opacity: 0;
+  }
+  .clear-space2 {
+    grid-area: clear-space2;
+    opacity: 0;
+  }
+  .clear-space3 {
+    grid-area: clear-space3;
+    opacity: 0;
+  }
+  .clear-space4 {
+    grid-area: clear-space4;
+    opacity: 0;
+  }
+
+  .grid-container-kontakt {
+    display: grid;
+    grid-template-areas:
+      "frontpagetext frontpagetext"
+      "hr-split hr-split"
+      "jacobforsideimg simonforsideimg"
+      "hr-split2 hr-split2"
+      "formheader forms"
+      "footer footer";
+  }
+
+  .fairvideoimg,
+  .kenvideoimg,
+  .bojevideoimg,
+  .fairvideo-text p,
+  .kenvideo-text p,
+  .bojevideo-text p,
+  .horsvideo-text p,
+  .paravideo-text p,
+  .jeepvideo-text p {
+    margin-left: 20px;
+  }
+
+  .horsvideoimg img,
+  .paravideoimg img,
+  .jeepvideoimg img,
+  .produktvideoimg img,
+  .reklamevideoimg img,
+  .eventvideoimg img {
+    height: 25vh;
+  }
+
+  .fairvideoimg img,
+  .kenvideoimg img,
+  .bojevideoimg img,
+  .rekvideoimg img,
+  .dronevideoimg img,
+  .profilvideoimg img {
+    height: 25vh;
+  }
+
+  .hr-splitter-t-1,
+  .hr-splitter-t-2,
+  .hr-splitter-t-3,
+  .hr-splitter-t-4 {
+    margin: 15px 60% 25px 40px;
+  }
+
+  .hr-split-small-fp {
+    display: none;
+  }
+
+  .hr-split-small-fp1 {
+    display: none;
+  }
+
+  .hr-split-small-con {
+    display: none;
+  }
+
+  .contact-header h2 {
+    font-size: 1em;
+  }
+
+  .contact-header p {
+    font-size: 0.5em;
+  }
+
+  .form-input {
+    width: 50vw;
+  }
+
+  .form-input p {
+    font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    font-size: 0.3em;
+  }
+
+  .hr-splitter-y-5 {
+    display: none;
+  }
+
+  .forloeb-text {
+    grid-area: forloebtext;
+    margin-left: 20px;
+    font-size: 2.5vw;
+  }
+
+  .forloeb-btn {
+    width: 40%;
+  }
+  .kontaktos-btn {
+    width: 40%;
+  }
+
+  .nav-bar .logo {
+    max-width: 400px;
+  }
+
+  .distopnav {
+    background-image: url("../images/menubgtablet.jpg");
+  }
+
+  .distopnav img {
+    width: 75vw;
+  }
+
+  .menuitems a {
+    font-size: 3.5vw;
+    margin-left: 6vw;
+  }
+
+  /* Grid content og container - Forside */
+
+  .frontpagetext {
+    font-size: 0.5em;
+  }
+
+  .sevideoprodh1 {
+    font-size: 0.6em;
+  }
+
+  .fpimg {
+    width: 45vw;
+  }
+
+  .playbtn-overlay {
+    font-size: 8vw;
+  }
+
+  .modal-kontakt h1 {
+    font-size: 1em;
+  }
+
+  .referencertext {
+    font-size: 0.6em;
+  }
+
+  .jacobforside,
+  .simonforside {
+    font-size: 1rem;
+  }
+
+  .simonforsideimg,
+  .jacobforsideimg {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kontakt-btn {
+    width: 30%;
+  }
+
+  .textbox {
+    display: none;
+  }
+
+  .referencer-tablet-joblinsen {
+    display: block;
+    grid-area: referencer-tablet-joblinsen;
+    height: 400px;
+    background-color: #3e4f59;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 46vw;
+    position: relative;
+  }
+
+  .push-top-ref {
+    margin-top: 50px;
+  }
+
+  .referencer-tablet-joblinsen img {
+    display: block;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .referencer-tablet-vejle img {
+    display: block;
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .referencer-tablet-vejle {
+    display: block;
+    grid-area: referencer-tablet-vejle;
+    height: 400px;
+    background-color: #3e4f59;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 46vw;
+    position: relative;
+  }
+
+  .footer {
+    height: 100%;
+  }
+
+  .socialmedia {
+    font-size: 7vw;
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+
+  .footeraddress {
+    font-size: 2vw;
+  }
+
+  .active-footer-address {
+    display: none;
+  }
+
+  .active-footer-address-ipad {
+    display: block;
+  }
+
+  .containertimeline ul li {
+    width: 100%;
+  }
+
+  .phone-btn {
+    width: 10%;
+    height: 5vw;
+  }
+
+  .phone-btn i {
+    line-height: 5vw;
+  }
+
+  .flereprod-btn {
+    width: 30%;
+  }
+
+  /* modal for phone on ipad */
+
+  .modal-content {
+    height: 50%;
+    width: 50%;
+    padding-top: 1vh;
+  }
+
+  .modal-content h1 {
+    font-size: 1em;
+  }
+
+  .closebtn-phone {
+    left: 47vw;
+  }
+
+  .jacobsimonimgipad-fp {
+    display: block;
+    width: 90%;
+    margin: 20px 20px 0 auto;
+  }
+
+  .frontpagetext-desk {
+    display: block;
+    margin-left: 20px;
+    width: 90%;
+    color: #3e4f59;
+  }
+
+  .frontpagetext-desk p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .frontpagetext-desk h1 {
+    font-size: 1em;
+  }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .showreel {
+    cursor: pointer;
+  }
+
+  .phone-btn {
+    display: none;
+  }
+
+  .ydelsecloseevent {
+    left: 42.6vw;
+  }
+
+  .kontakt-btn:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .distopnav,
+  .open {
+    display: none;
+  }
+  .nav-bar-desk {
+    display: block;
+  }
+
+  .nav-bar-desk ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+  }
+
+  .nav-bar-desk li {
+    float: left;
+    cursor: pointer;
+    font-size: 0.25em;
+    padding: 0 25px;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-bar-desk a {
+    color: #fff;
+  }
+
+  .nav-bar-desk li:hover {
+    color: #f08600;
+  }
+
+  .nav-desktop-active {
+    color: #f08600;
+  }
+
+  .showreel {
+    display: none;
+  }
+
+  .showreel-desktop {
+    display: block;
+    max-width: 100vw;
+    position: relative;
+  }
+
+  .showreel-desktop video {
+    width: 100%;
+  }
+
+  .showreel-desktop article {
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    left: 30%;
+    right: 30%;
+    margin-top: 7%;
+    line-height: 60px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
+  }
+  .sevideoprodh1,
+  .referencertext {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .sevideoprodh1 h1,
+  .referencertext h1 {
+    font-size: 50px;
+  }
+
+  #navbarskarptto {
+    display: flex;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #navbarskarptto a img {
+    transform: translate(10vw, 25vh);
+    max-height: 20vw;
+    position: fixed;
+    transition: all 0.5s;
+    max-width: 50%;
+  }
+
+  #navbarskarptmobil {
+    display: none;
+  }
+
+  #logoflex {
+    display: block;
+  }
+
+  #logomobile {
+    display: none;
+  }
+
+  .maincontentfp {
+    padding-top: 0px;
+  }
+
+  .jacobsimonimgipad-fp {
+    grid-area: jacobsimonimgipad-fp;
+    display: block;
+    max-width: 100%;
+    margin-right: 170px;
+    margin-left: auto;
+    height: 100%;
+  }
+
+  .frontpagetext-desk {
+    display: block;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "showreel-desktop showreel-desktop"
+      "frontpagetext-desk jacobsimonimgipad-fp"
+      "hr-split hr-split"
+      "sevideoprodh1 sevideoprodh1"
+      "fairwind-video boeje-video"
+      "fairwind-text boeje-text"
+      "flereprod-btn flereprod-btn"
+      "hr-split2 hr-split2"
+      "referencertext referencertext"
+      "referencer-tablet-joblinsen referencer-tablet-vejle"
+      "hr-split3 hr-split3"
+      "jacobforsideimg simonforsideimg"
+      "jacobforside simonforside"
+      "kontaktbtn kontaktbtn"
+      "footer footer";
+  }
+
+  .grid-container-produkt {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "frontpagetext frontpagetext"
+      "hr-split-t hr-split-t"
+      "horsvideoimg fairvideoimg"
+      "horsvideotext fairvideotext"
+      "hr-splitter-t-1 hr-splitter-t-2"
+      "paravideoimg kenvideoimg"
+      "paravideotext kenvideotext"
+      "hr-splitter-t-3 hr-splitter-t-4"
+      "jeepvideoimg bojevideoimg"
+      "jeepvideotext bojevideotext"
+      "hr-split-omperskontakt hr-split-omperskontakt"
+      "kontaktos kontaktos"
+      "kontaktosbtn kontaktosbtn"
+      "footer footer";
+  }
+
+  .grid-container-ydelser {
+    display: grid;
+    grid-template-areas:
+      "frontpagetext-desk frontpagetext-desk"
+      "hr-split hr-split"
+      "produktvideoimg rekvideoimg"
+      "produktvideotext rekvideotext"
+      "hr-splitter-y-1 hr-splitter-y-2"
+      "eventvideoimg dronevideoimg"
+      "eventvideotext dronevideotext"
+      "hr-splitter-y-3 hr-splitter-y-4"
+      "reklamevideoimg profilvideoimg"
+      "reklamevideotext profilvideotext"
+      "hr-split-omperskontakt hr-split-omperskontakt"
+      "kontaktos kontaktos"
+      "forloebbtn forloebbtn"
+      "footer footer";
+  }
+
+  .grid-container-forloeb {
+    display: grid;
+    grid-template-areas:
+      "frontpagetext frontpagetext"
+      "hr-split-desk hr-split-desk"
+      "clear-space opstart-h1"
+      "opstartimg opstart-text"
+      "hr-split-small-forloeb1-d hr-split-small-forloeb1-d"
+      "pre-h1 clear-space1"
+      "pre-text preproductionimg"
+      "hr-split-small-forloeb2-d hr-split-small-forloeb2-d"
+      "clear-space2 prod-h1"
+      "prodimg prod-text"
+      "hr-split-small-forloeb3-d hr-split-small-forloeb3-d"
+      "post-h1 clear-space3"
+      "post-text postimg"
+      "hr-split-small-forloeb4-d hr-split-small-forloeb4-d"
+      "clear-space4 opfl-h1"
+      "opflimg opfl-text"
+      "hr-split-omperskontakt hr-split-omperskontakt"
+      "kontaktos kontaktos"
+      "kontaktosbtn kontaktosbtn"
+      "footer footer";
+  }
+
+  .hr-split2-omperskontakt {
+    display: block;
+    border: 2px solid #f08600;
+    margin: 25px 20px;
+    grid-area: hr-split-omperskontakt;
+    background: #f08600;
+  }
+
+  .kontaktos-btn {
+    grid-area: kontaktosbtn;
+    background-color: #294973;
+    border: 1px solid #3e4f59;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .grid-container-ompers {
+    display: grid;
+    grid-template-areas:
+      "frontpagetext jacobsimonimgipad"
+      "hr-split-desk hr-split-desk"
+      "navn-text containertimeline"
+      "alder-text containertimeline"
+      "passion-text containertimeline"
+      "hvordan-text containertimeline"
+      "erfaring-text containertimeline"
+      "hr-split-omperskontakt hr-split-omperskontakt"
+      "kontaktos kontaktos"
+      "kontaktosbtn kontaktosbtn"
+      "footer footer";
+  }
+
+  #om-page {
+    margin-top: 180px;
+  }
+
+  .hr-split-desk,
+  .hr-split-small-forloeb1-desk,
+  .hr-split-small-forloeb2-desk,
+  .hr-split-small-forloeb3-desk,
+  .hr-split-small-forloeb4-desk {
+    display: block;
+  }
+
+  #splitfor1,
+  #splitfor2,
+  #splitfor3,
+  #splitfor4 {
+    display: none;
+  }
+
+  .jacobsimonimgipad {
+    grid-area: jacobsimonimgipad;
+    padding-top: 90px;
+    width: 100%;
+    height: 50vh;
+    display: block;
+    width: auto;
+    margin-right: 150px;
+    margin-left: 40px;
+  }
+
+  .jacobsimonimg {
+    display: none;
+  }
+
+  .clear-space {
+    grid-area: clear-space;
+    opacity: 0;
+  }
+  .clear-space1 {
+    grid-area: clear-space1;
+    opacity: 0;
+  }
+  .clear-space2 {
+    grid-area: clear-space2;
+    opacity: 0;
+  }
+  .clear-space3 {
+    grid-area: clear-space3;
+    opacity: 0;
+  }
+  .clear-space4 {
+    grid-area: clear-space4;
+    opacity: 0;
+  }
+
+  .grid-container-kontakt {
+    display: grid;
+    grid-template-areas:
+      "frontpagetext frontpagetext"
+      "hr-split hr-split"
+      "jacobforsideimg simonforsideimg"
+      "hr-split2 hr-split2"
+      "formheader forms"
+      "footer footer";
+  }
+
+  .hr-split-small-fp {
+    display: none;
+  }
+
+  .hr-split-small-fp1 {
+    display: none;
+  }
+
+  .hr-split-small-con {
+    display: none;
+  }
+
+  .contact-header h2 {
+    font-size: 1em;
+  }
+
+  .contact-header p {
+    font-size: 0.5em;
+  }
+
+  .form-input {
+    width: 50vw;
+  }
+
+  .form-input p {
+    font-size: 0.25em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    font-size: 0.3em;
+  }
+
+  .hr-splitter-y-5 {
+    display: none;
+  }
+
+  .kontaktos-text {
+    grid-area: kontaktos;
+    margin-left: 20px;
+    font-size: 2.5vw;
+    display: block;
+  }
+
+  .forloeb-text {
+    grid-area: forloebtext;
+    margin-left: 20px;
+    font-size: 2.5vw;
+  }
+
+  .forloeb-btn {
+    width: 40%;
+  }
+
+  .nav-bar .logo {
+    max-width: 400px;
+  }
+
+  .distopnav {
+    background-image: url("../images/menubgtablet.jpg");
+  }
+
+  .distopnav img {
+    width: 75vw;
+  }
+
+  .menuitems a {
+    font-size: 3.5vw;
+    margin-left: 6vw;
+  }
+
+  .simonforsideimg,
+  .jacobforsideimg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Grid content og container - Forside */
+
+  .frontpagetext {
+    font-size: 0.3em;
+    margin-right: 40%;
+  }
+
+  .sevideoprodh1 {
+    font-size: 0.6em;
+  }
+
+  .playbtn-overlay {
+    font-size: 8vw;
+  }
+
+  .modal-kontakt h1 {
+    font-size: 1em;
+  }
+
+  .jacobforside,
+  .simonforside {
+    font-size: 1rem;
+  }
+
+  .kontakt-btn {
+    width: 30%;
+  }
+
+  .textbox {
+    display: none;
+  }
+
+  .referencer-tablet-joblinsen {
+    display: block;
+    grid-area: referencer-tablet-joblinsen;
+    height: 400px;
+    background-color: #3e4f59;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 465px;
+    position: relative;
+  }
+
+  .push-top-ref {
+    margin-top: 50px;
+  }
+
+  .referencer-tablet-joblinsen img {
+    display: block;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .referencer-tablet-vejle img {
+    display: block;
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .referencer-tablet-vejle {
+    display: block;
+    grid-area: referencer-tablet-vejle;
+    height: 400px;
+    background-color: #3e4f59;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 465px;
+    position: relative;
+  }
+
+  .footer {
+    height: 100%;
+  }
+
+  .socialmedia {
+    font-size: 3vw;
+    padding-right: 40%;
+    padding-left: 40%;
+    margin-bottom: -40px;
+  }
+
+  .socialmedia i:hover {
+    color: #ffffff;
+    transition: 0.3s;
+  }
+
+  .footeraddress {
+    font-size: 1vw;
+  }
+
+  .footeraddress a:hover {
+    color: #f08600;
+    transition: 0.3s;
+  }
+
+  .inlineaddress a:hover {
+    color: #f08600;
+    transition: 0.3s;
+  }
+
+  .active-footer-address {
+    display: none;
+  }
+
+  .active-footer-address-ipad {
+    display: block;
+  }
+
+  .containertimeline ul li {
+    width: 100%;
+  }
+
+  .phone-btn {
+    width: 10%;
+    height: 5vw;
+  }
+
+  .phone-btn i {
+    line-height: 5vw;
+  }
+
+  .flereprod-btn {
+    width: 30%;
+  }
+
+  /* modal for phone on ipad */
+
+  .modal-content {
+    height: 50%;
+    width: 50%;
+    padding-top: 1vh;
+  }
+
+  .modal-content h1 {
+    font-size: 1em;
+  }
+
+  .closebtn-phone {
+    left: 47vw;
+  }
+
+  /* HOVER EFFECT FOR PICTURES */
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .fpimg:hover img {
+    filter: brightness(70%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .fpimg:hover .overlay {
+    opacity: 100;
+    cursor: pointer;
+  }
+
+  .flereprod-btn,
+  .kontakt-btn,
+  .forloeb-btn,
+  .kontaktos-btn,
+  input[type="submit"] {
+    background-color: transparent;
+    border: 2px solid #3e4f59;
+    color: #3e4f59;
+    font-size: 14px;
+    padding: 16px;
+    width: 10%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  input[type="submit"] {
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  #fp-text {
+    display: none;
+  }
+
+  .ydelsemodalheader {
+    font-size: 0.6em;
+  }
+
+  .ydelsemodalheader,
+  .ydelsemodaltext,
+  .hr-splitter {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .hr-split-small-ydelse {
+    margin-left: 300px;
+  }
+
+  .modal-kontakt {
+    font-size: 0.6em;
+  }
+
+  .phonew:hover,
+  .mailw:hover,
+  .ydelseclose:hover,
+  .ydelseclosedrn:hover,
+  .ydelsecloseevent:hover,
+  .ydelsecloseprofil:hover,
+  .ydelseclosereklam:hover,
+  .ydelsecloseprod:hover,
+  .ydelsecloseboje:hover {
+    color: #f08600;
+  }
+
+  .frontpagetext-desk {
+    grid-area: frontpagetext-desk;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    color: #3e4f59;
+  }
+
+  .frontpagetext-desk h1 {
+    font-size: 50px;
+  }
+
+  .frontpagetext-desk p {
+    line-height: 30px;
+    font-size: 0.3em;
+  }
+
+  .flereprod-btn:hover,
+  .kontakt-btn:hover,
+  .forloeb-btn:hover,
+  .kontaktos-btn:hover,
+  input[type="submit"]:hover {
+    background-color: #294973;
+    color: #fff;
+    transition: 0.8s;
+  }
+
+  .form-input {
+    width: 40vw;
+  }
+
+  .checkmark {
+    cursor: pointer;
+  }
+
+  .contact-header h2 {
+    font-size: 0.6em;
+  }
+
+  .contact-header p {
+    font-size: 0.3em;
+    width: 80%;
+    line-height: 30px;
+  }
+
+  .boeje-video,
+  .boeje-text {
+    margin-right: 150px;
+    /* margin-left: auto; */
+  }
+
+  .fairwind-video {
+    margin-left: 150px;
+    margin-right: auto;
+  }
+
+  .referencer-tablet-joblinsen {
+    margin-left: 35%;
+    margin-right: auto;
+  }
+
+  .referencer-tablet-vejle {
+    margin-right: 35%;
+    margin-left: auto;
+  }
+
+  .fairwind-text,
+  .frontpagetext-desk,
+  .contact-header {
+    margin-left: 170px;
+  }
+
+  .jacobforsideimg {
+    margin-left: 40%;
+    margin-right: auto;
+  }
+
+  .containertimeline ul:before {
+    height: 60%;
+  }
+
+  .simonforsideimg {
+    margin-right: 40%;
+    margin-left: auto;
+  }
+
+  .horsvideoimg,
+  .horsvideo-text,
+  .paravideoimg,
+  .paravideo-text,
+  .jeepvideoimg,
+  .jeepvideo-text,
+  .produktvideoimg,
+  .produktvideo-text,
+  .reklamevideoimg,
+  .reklamevideo-text,
+  .eventvideoimg,
+  .eventvideo-text {
+    margin-left: 150px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .horsvideoimg img,
+  .paravideoimg img,
+  .jeepvideoimg img,
+  .produktvideoimg img,
+  .reklamevideoimg img,
+  .eventvideoimg img {
+    height: 33vh;
+  }
+
+  .fairvideoimg img,
+  .kenvideoimg img,
+  .bojevideoimg img,
+  .rekvideoimg img,
+  .dronevideoimg img,
+  .profilvideoimg img {
+    height: 33vh;
+  }
+
+  .kenvideo-text p,
+  .bojevideo-text p,
+  .horsvideo-text p,
+  .fairvideo-text p,
+  .paravideo-text p,
+  .jeepvideo-text p,
+  .eventvideo-text p,
+  .produktvideo-text p,
+  .rekvideo-text p,
+  .dronevideo-text p,
+  .profilvideo-text p,
+  .reklamevideo-text p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #pro-page,
+  .clear-space,
+  .opstartimg,
+  .pre-h1,
+  .pre-text,
+  .prodimg,
+  .clear-space2,
+  .post-h1,
+  .post-text,
+  .opflimg,
+  .clear-space4,
+  #for-page,
+  #kon-page,
+  #om-page,
+  .navn-text,
+  .alder-text,
+  .passion-text,
+  .hvordan-text,
+  .erfaring-text {
+    margin-left: 150px;
+    margin-right: 20px;
+  }
+
+  .preproductionimg,
+  .clear-space1,
+  .opstart-h1,
+  .opstart-text,
+  .prod-h1,
+  .prod-text,
+  .postimg,
+  .clear-space3,
+  .opfl-h1,
+  .opfl-text,
+  .form-input,
+  .containertimeline {
+    margin-right: 150px;
+    margin-left: 20px;
+  }
+
+  .fairvideoimg,
+  .fairvideo-text,
+  .kenvideoimg,
+  .kenvideo-text,
+  .bojevideoimg,
+  .bojevideo-text,
+  .rekvideoimg,
+  .rekvideo-text,
+  .dronevideoimg,
+  .dronevideo-text,
+  .profilvideoimg,
+  .profilvideo-text {
+    margin-right: 150px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .hr-split,
+  .hr-split2,
+  .hr-split2-omperskontakt,
+  .hr-split3,
+  .hr-split-t,
+  .hr-splitter-y-1,
+  .hr-splitter-y-3,
+  .hr-splitter-y-2,
+  .hr-splitter-y-4,
+  .hr-splitter-t-1,
+  .hr-splitter-t-3,
+  .hr-splitter-t-2,
+  .hr-splitter-t-4 {
+    margin-left: 170px;
+    margin-right: 170px;
+  }
+
+  .hr-splitter-y-1,
+  .hr-splitter-y-3 {
+    width: 50%;
+  }
+
+  .hr-splitter-y-2,
+  .hr-splitter-y-4,
+  .hr-splitter-t-2,
+  .hr-splitter-t-4 {
+    margin-left: 40px;
+    width: 50%;
+  }
+
+  .checkbox {
+    margin-top: 35px;
+  }
+
+  .hr-split-desk {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .hr-split-small-forloeb1-desk,
+  .hr-split-small-forloeb2-desk,
+  .hr-split-small-forloeb3-desk,
+  .hr-split-small-forloeb4-desk {
+    margin-left: 150px;
+  }
+
+  #hrsplit {
+    display: none;
+  }
+
+  .kontaktos-text {
+    font-size: 0.4em;
+    text-align: center;
+  }
+
+  .forloeb-text {
+    font-size: 0.4em;
+    text-align: center;
+  }
+}
+
+/* ---------  MANGLER  -------- */
+/* 
+Billeder på forløb skal fikses.
+
+
+*/

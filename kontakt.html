@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skarpt Media - Kontakt os her så vi kan finde ud af hvad vi kan gøre for dig!</title>
+    <meta name="description"
+        content="Vil du i kontakt med os? Du kan se hvordan du kommer i kontakt med os her.  Vi ser frem til en samtale eller en besked fra dig!">
+    <meta name="keywords" content="Videoproduktion, reklamefilm, skarpt media">
+    <meta name="author" content="Jacob Vinding, Simon Christensen">
+    <meta content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5098a53703.js"></script>
+</head>
+
+<body id="body-id">
+    <header>
+        <div class="nav-bar" id="navbarskarpt">
+            <div class="logo">
+                <a href="index.html"><img alt="Skarpt Media logo" src="assets/images/logo-vector-hvid.svg"></a>
+            </div>
+            <span class="open" onclick="Open()">&#9776;</span>
+            <div class="nav-bar-desk">
+                <ul>
+                    <a href="index.html">
+                        <li>Forside</li>
+                    </a>
+                    <a href="tidlcases.html">
+                        <li>Tidligere cases</li>
+                    </a>
+                    <a href="ydelser.html">
+                        <li>Vores ydelser</li>
+                    </a>
+                    <a href="forloeb.html">
+                        <li>Forløb efter aftale</li>
+                    </a>
+                    <a href="ompers.html">
+                        <li>Om personerne bag</li>
+                    </a>
+                    <a href="kontakt.html">
+                        <li class="nav-desktop-active">Kontakt os</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="distopnav" id="topnav">
+            <a href="index.html"><img src="assets/images/logo-vector-hvid.svg" alt="Skarpt Media logo"></a>
+            <div class="menuitems">
+                <a href="index.html">Forside</a>
+                <a href="tidlcases.html">Tidligere cases</a>
+                <a href="ydelser.html">Vores ydelser</a>
+                <a href="forloeb.html">Forløb efter aftale</a>
+                <a href="ompers.html">Om personerne bag</a>
+                <a href="kontakt.html" class="nav-active">Kontakt os</a>
+            </div>
+            <a href="javascript:void(0)" onclick="Close()"><i class="fas fa-window-close closebtn"></i></a>
+        </div>
+
+    </header>
+    <main class="maincontentex" id="mainsite">
+        <div class="grid-container-kontakt">
+            <section class="frontpagetext">
+                <article id="kon-page">
+                    <h1>
+                        <span class="blue">Du skal være velkommen<br>til at tage</span>
+                        <span class="orange">KONTAKT</span>
+                        <span class="blue">til os</span>
+                    </h1>
+                </article>
+            </section>
+
+            <hr class="hr-split">
+
+            <div class="jacobforsideimg">
+                <img src="assets/images/jacob.jpg" alt="Billede af Jacob">
+
+
+                <address class="jacobforside">
+                    <h2 class="orange">JACOB VINDING</h2>
+                    <div class="inlineaddress">
+                        <a class="grey" href="tel:+4524835939">+45 24 83 59 39</a>
+                        <p class="orange">|</p>
+                        <a class="grey" href="mailto:jacob@skarptmedia.dk">jacob@skarptmedia.dk</a>
+                    </div>
+                </address>
+            </div>
+
+            <hr class="hr-split-small-con">
+
+
+            <div class="simonforsideimg">
+                <img src="assets/images/simon.jpg" alt="Billede af Simon">
+
+
+                <address class="simonforside">
+                    <h2 class="orange">SIMON CHRISTENSEN</h2>
+                    <div class="inlineaddress">
+                        <a class="grey" href="tel:+4522429022">+45 22 42 90 22</a>
+                        <p class="orange">|</p>
+                        <a class="grey" href="mailto:simon@skaptmedia.dk">simon@skarptmedia.dk</a>
+                    </div>
+
+                </address>
+            </div>
+            <hr class="hr-split2">
+
+
+
+            <section class="contact-header">
+                <h2>KONTAKT OS EVENTUELT HER</h2>
+                <p>Hvis ikke du har mulighed for at give os et kald, så brug endelig
+                    vores kontaktformular herunder, vi vender tilbage til dig hurtigst muligt.</p>
+            </section>
+
+
+            <section class="form-input">
+                <form onsubmit="return checkForm(this)">
+                    <input type="text" onfocus="this.value=''" name="name" placeholder="Navn"><br>
+                    <input type="email" onfocus="this.value=''" name="email" placeholder="Mail"><br>
+                    <input type="tel" onfocus="this.value=''" name="phone" placeholder="Telefonnummer"><br>
+                    <input type="text" onfocus="this.value=''" name="name" placeholder="Besked" class="message"><br>
+                    <p>Jeg er ikke en robot <span class="orange">*</span></p>
+                    <label class="checkbox">
+                        <input name="terms" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <input type="submit" value="SEND BESKED">
+                </form>
+            </section>
+
+            <footer class="footer">
+                <div class="socialmedia">
+                    <a target="_blank" href="https://www.facebook.com/SkarptMedia/"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://vimeo.com/skarpt"><i class="fab fa-vimeo-v"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/skarptmedia/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a target="_blank"
+                        href="https://dk.linkedin.com/company/skarpt?trk=public_profile_topcard_current_company"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <br>
+                <address class="active-footer-address">
+                    <div class="footeraddress">
+                        <p>Skarpt Media</p>
+                        <p><span class="orange">|</span></p>
+                        <p>CVR-nr. DK37518670</p>
+                    </div>
+                    <div class="footeraddress">
+                        <a href="tel:+4524835939">+45 24 38 59 39</a>
+                        <p><span class="orange">|</span></p>
+                        <a href="mailto:kontakt@skarptmedia.dk">kontakt@skarptmedia.dk</a>
+
+                    </div>
+                    <div class="footeraddress">
+
+                        <a target="_blank"
+                            href="https://www.google.com/maps/place/Mariane+Thomsens+Gade+36,+8000+Aarhus/@56.1655031,10.2268369,17z/data=!3m1!4b1!4m8!1m2!2m1!1sMariane+Thomsens+Gade+36.+4,+1,+8000+Aarhus+C!3m4!1s0x464c3fa1492c9d6b:0x74eeb08bfffb6b03!8m2!3d56.1655001!4d10.2290256">
+                            <p>Mariane Thomsens Gade 36. 4, 1, 8000 Aarhus C</p>
+                        </a>
+                    </div>
+                </address>
+                <address class="active-footer-address-ipad">
+                    <div class="footeraddress">
+                        <p>Skarpt Media</p>
+                        <p><span class="orange">|</span></p>
+                        <p>CVR-nr. DK37518670</p>
+                        <p><span class="orange">|</span></p>
+                        <a href="tel:+4524835939">+45 24 38 59 39</a>
+                    </div>
+                    <div class="footeraddress">
+                        <a href="mailto:kontakt@skarptmedia.dk">kontakt@skarptmedia.dk</a>
+                        <p><span class="orange">|</span></p>
+                        <a target="_blank"
+                            href="https://www.google.com/maps/place/Mariane+Thomsens+Gade+36,+8000+Aarhus/@56.1655031,10.2268369,17z/data=!3m1!4b1!4m8!1m2!2m1!1sMariane+Thomsens+Gade+36.+4,+1,+8000+Aarhus+C!3m4!1s0x464c3fa1492c9d6b:0x74eeb08bfffb6b03!8m2!3d56.1655001!4d10.2290256">
+                            Mariane Thomsens Gade 36. 4, 1, 8000 Aarhus C
+                        </a>
+                    </div>
+                </address>
+            </footer>
+        </div>
+    </main>
+    <script src="assets/js/scriptkontakt.js"></script>
+</body>
+
+</html>
